@@ -1,5 +1,6 @@
 //основной модуль
 import gulp from 'gulp';
+import ghPages from 'gulp-gh-pages';
 
 //импорт путей
 import { path } from './gulp/config/path.js';
@@ -49,6 +50,11 @@ const dev = gulp.series(
 	mainTasks,
 	gulp.parallel(watcher, server)
 );
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 //сценарий по умолчанию
 gulp.task('default', dev);

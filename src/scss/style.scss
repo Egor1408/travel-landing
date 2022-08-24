@@ -1,1 +1,10 @@
 @import 'fonts';
+
+:root {
+	--color-main: #f2785c;
+	--color-secondary: #0d606f;
+}
+
+@import 'common';
+@import 'header';
+@import 'banner';
