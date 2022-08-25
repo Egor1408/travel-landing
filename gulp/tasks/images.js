@@ -15,8 +15,8 @@ export const images = () => {
 		//конвертация в webp
 		// .pipe(webp())
 		//копирование изображений в итоговую папку
-		.pipe(app.gulp.dest(app.path.build.images))
-		.pipe(app.plugins.newer(app.path.build.images))
+		// .pipe(app.gulp.dest(app.path.build.images))
+		// .pipe(app.plugins.newer(app.path.build.images))
 		//оптимизация
 		.pipe(imagemin({
 			progressive: true,

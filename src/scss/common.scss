@@ -2,6 +2,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	list-style: none;
+}
+
+a, button {
+	cursor: pointer;
 }
 
 body {
@@ -21,7 +26,6 @@ body {
 	padding: 10px 30px;
 	border: none;
 	outline: none;
-	cursor: pointer;
 
 	&:hover {
 		box-shadow: 0 0 2px 2px rgba(13, 96, 111, .5);

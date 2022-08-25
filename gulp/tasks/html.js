@@ -16,7 +16,7 @@ export const html = () => {
 		//ренейм алиасов изображений
 		.pipe(app.plugins.replace(/@img\//g, 'img/'))
 		//webp плагин
-		.pipe(webpHtmlNosvg())
+		// .pipe(webpHtmlNosvg())
 		//автонумерация версии проекта
 		.pipe(
 			versionNumber({

@@ -1,0 +1,40 @@
+footer {
+	position: absolute;
+	height: 60px;
+	width: 100%;
+
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 730px;
+		height: 35px;
+		margin: 10px 121px auto auto;
+
+		.copyright {
+			font-family: 'RedHatText';
+			font-size: 16px;
+			font-weight: 500;
+			color: #fff;
+		}
+	}
+
+	.social {
+
+		&__list {
+			display: flex;
+		}
+
+		&__item {
+			margin-left: 20px;
+		}
+
+		&__link {
+			color: #f8f8f8;
+
+			&:hover {
+				color: var(--color-main);
+			}
+		}
+	}
+}
