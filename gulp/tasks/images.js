@@ -13,7 +13,7 @@ export const images = () => {
 		//проверка обновления картинок
 		.pipe(app.plugins.newer(app.path.build.images))
 		//конвертация в webp
-		.pipe(webp())
+		// .pipe(webp())
 		//копирование изображений в итоговую папку
 		.pipe(app.gulp.dest(app.path.build.images))
 		.pipe(app.plugins.newer(app.path.build.images))
