@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220825194916">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220828214430">
 	<title>Travel Portal</title>
 </head>
 <body>
@@ -16,16 +16,16 @@
 	<nav>
 		<ul class="nav__list">
 			<li class="nav__item">
-				<a href="#" class="nav__link">How It Works</a>
+				<a href="#steps" class="nav__link">How It Works</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">Plan Your Trip</a>
+				<a href="#plan" class="nav__link">Plan Your Trip</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">Destinations</a>
+				<a href="#destination" class="nav__link">Destinations</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">Travel Stories</a>
+				<a href="#stories" class="nav__link">Travel Stories</a>
 			</li>
 		</ul>
 	</nav>
@@ -37,7 +37,7 @@
 
 
 	<main>
-	<section class="preview banner">
+	<section class="preview banner" id="plan">
 	<div class="banner__title">Explore the beauty of the World</div>
 	<div class="banner__sub-title">Receive personalized reccomendations for countries, hotels, activities and more</div>
 	<div class="banner__input">
@@ -45,7 +45,7 @@
 		<button class="banner__btn main-btn">Start Planning</button>
 	</div>
 </section>
-	<section class="steps">
+	<section class="steps" id="steps">
 	<h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
 	<div class="steps__list">
 		<div class="steps__item item1">
@@ -68,8 +68,37 @@
 		</div>
 	</div>
 </section>
-	<section class="destinations sliders"></section>
-	<section class="stories">
+	<section class="destinations" id="destination">
+	<h2 class="destinations__title">POPULAR DESTINATIONS</h2>
+	<div class="slider">
+		<div class="slider__wrapper slide2">
+			<div class="slider__item slide1">
+				<span>SEA</span>
+			</div>
+			<div class="slider__item slide2">
+				<span>JAPAN</span>
+			</div>
+			<div class="slider__item slide3">
+				<span>USA</span>
+			</div>
+		</div>
+	</div>
+	<div class="slider__pagination">
+		<div class="paginator__active slide3"></div>
+		<div class="paginator"></div>
+		<div class="paginator"></div>
+		<div class="paginator"></div>
+	</div>
+	<button class="destinations__btn main-btn">
+		<svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M2.5 20.5001C2.5 20.1686 2.6317 19.8507 2.86612 19.6162C3.10054 19.3818 3.41848 19.2501 3.75 19.2501H33.2325L25.365 11.3851C25.1303 11.1504 24.9984 10.8321 24.9984 10.5001C24.9984 10.1682 25.1303 9.84983 25.365 9.61511C25.5997 9.3804 25.9181 9.24854 26.25 9.24854C26.5819 9.24854 26.9003 9.3804 27.135 9.61511L37.135 19.6151C37.2514 19.7312 37.3438 19.8692 37.4068 20.021C37.4698 20.1729 37.5022 20.3357 37.5022 20.5001C37.5022 20.6645 37.4698 20.8273 37.4068 20.9792C37.3438 21.1311 37.2514 21.269 37.135 21.3851L27.135 31.3851C26.9003 31.6198 26.5819 31.7517 26.25 31.7517C25.9181 31.7517 25.5997 31.6198 25.365 31.3851C25.1303 31.1504 24.9984 30.8321 24.9984 30.5001C24.9984 30.1682 25.1303 29.8498 25.365 29.6151L33.2325 21.7501H3.75C3.41848 21.7501 3.10054 21.6184 2.86612 21.384C2.6317 21.1496 2.5 20.8316 2.5 20.5001V20.5001Z"
+				fill="white" />
+		</svg>
+		Find More
+	</button>
+</section>
+	<section class="stories" id="stories">
 	<h2 class="story__title">TRAVEL STORIES</h2>
 	<div class="story__list">
 		<div class="story__item item1">
@@ -190,7 +219,7 @@
 	</div>
 </footer>
 
-	<script src="js/app.min.js?_v=20220825194916"></script>
+	<script src="js/app.min.js?_v=20220828214430"></script>
 </body>
 
 </html>

@@ -7,6 +7,11 @@
 
 a, button {
 	cursor: pointer;
+	transition: all ease .2s;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -15,6 +20,19 @@ body {
 	max-width: 1440px;
 	margin: 0 auto;
 	background-color: #ccc;
+}
+
+main {
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		top: 0;
+		left: 0;
+		z-index: -2;
+	}
 }
 
 .main-btn {

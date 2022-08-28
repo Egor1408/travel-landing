@@ -42,6 +42,10 @@
 
 			svg {
 				margin-right: 10px;
+
+				path {
+						transition: all ease-in .2s;
+					}
 			}
 
 			&:hover {
