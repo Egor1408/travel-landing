@@ -84,6 +84,10 @@
 			&.slide3 {
 				background: url('../img/slide3.jpg');
 			}
+
+			&:hover {
+				box-shadow: 0 0 3px 3px var(--color-main);
+			}
 		}
 	
 		&__pagination {
@@ -101,6 +105,10 @@
 				background: var(--color-main);
 				opacity: 0.5;
 				cursor: pointer;
+
+				&:hover {
+					box-shadow: 0 0 2px 2px var(--color-main);
+				}
 			}
 
 			.paginator__active {
