@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220828214430">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220829213038">
 	<title>Travel Portal</title>
 </head>
 <body>
@@ -219,7 +219,51 @@
 	</div>
 </footer>
 
-	<script src="js/app.min.js?_v=20220828214430"></script>
+	<div class="popup signin__modal">
+	<div class="modal__wrap">
+		<button class="modal__close signin__close">&times;</button>
+		<h2 class="modal__title">Log in to your account</h2>
+		<button class="btn__facebook"><img src="img/facebook.svg"/>Sign In with Facebook</button>
+		<button class="btn__google"><img src="img/google.svg" />Sign In with Google</button>
+		<div class="separator">
+			<div class="line"></div>
+			<span>or</span>
+			<div class="line"></div>
+		</div>
+		<div class="modal__input email">
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email">
+		</div>
+		<div class="modal__input password">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password">
+		</div>
+		<button class="main-btn btn__signin">Sign In</button>
+		<a href="#" class="btn__forgot">Forgot Your Password?</a>
+		<div class="modal__footer">
+			<p class="footer__text">Don’t have an account? <a href="#" class="footer__link">Register</a></p>
+		</div>
+	</div>
+</div>
+	<div class="popup signup__modal">
+	<div class="modal__wrap">
+		<button class="modal__close signup__close">&times;</button>
+		<h2 class="modal__title">Create account</h2>
+		<div class="modal__input email">
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email">
+		</div>
+		<div class="modal__input password">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password">
+		</div>
+		<button class="main-btn signup-btn">Sign Up</button>
+		<div class="modal__footer">
+			<p class="footer__text">Already have an account? <a href="#" class="footer__link">Log in</a></p>
+		</div>
+	</div>
+</div>
+	<script src="js/app.min.js?_v=20220829213038"></script>
 </body>
 
 </html>

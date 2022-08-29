@@ -3,6 +3,7 @@
 :root {
 	--color-main: #f2785c;
 	--color-secondary: #0d606f;
+	--color-secondary-o5: rgba(13, 96, 111, 0.5);
 }
 
 @import 'common';
@@ -12,3 +13,5 @@
 @import 'slider';
 @import 'stories';
 @import 'footer';
+@import 'modal-signup';
+@import 'modal-signin';
